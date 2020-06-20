@@ -11,8 +11,6 @@ class Landing extends React.Component {
   render() {
     return (
       <Layout>
-        <div className="landing-container">
-          <div className="posts-container">
             <Helmet title={config.siteTitle} />
             <SEO />
             <div className="section purple-section">
@@ -110,13 +108,15 @@ class Landing extends React.Component {
         </div>
         <div className="section section-4">
           <div className="lady-image-grid">
-            <div className="lady-image-wrapper">
-              <img
-                className="lady-image"
-                src={"./images/lady.jpg"}
-                alt="lady with tablet"
-              />
-            </div>
+            {/* <div className="lady-section-wrapper"> */}
+              <div className="lady-image-wrapper">
+                <img
+                  className="lady-image"
+                  src={"./images/lady.jpg"}
+                  alt="lady with tablet"
+                />
+              </div>
+            {/* </div> */}
           </div>
           <div className="content-wrapper">
             <div className="content-grid">
@@ -185,8 +185,6 @@ class Landing extends React.Component {
                 />
               </div>
             </form>
-          </div>
-        </div>
           </div>
         </div>
       </Layout>
