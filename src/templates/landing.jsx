@@ -1,6 +1,5 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-import { graphql } from "gatsby";
 import Layout from "../layout";
 import SEO from "../components/SEO/SEO";
 import config from "../../data/SiteConfig";
@@ -10,7 +9,6 @@ import "./landing.css";
 
 class Landing extends React.Component {
   render() {
-    const postEdges = this.props.data.allMarkdownRemark.edges;
     return (
       <Layout>
         <div className="landing-container">
@@ -35,7 +33,7 @@ class Landing extends React.Component {
               <div className="image-2-wrapper">
                 <img
                   className="section-2-image"
-                  src={"./images/section-2-image.png"}
+                  src={"./images/section-2-image.jpg"}
                   alt="suit with a brain"
                 />
               </div>
@@ -199,25 +197,3 @@ class Landing extends React.Component {
 export default Landing;
 
 /* eslint no-undef: "off" */
-export const pageQuery = graphql`
-  query LandingQuery {
-    allMarkdownRemark(sort: { fields: [fields___date], order: DESC }) {
-      edges {
-        node {
-          fields {
-            slug
-            date
-          }
-          excerpt
-          timeToRead
-          frontmatter {
-            title
-            tags
-            cover
-            date
-          }
-        }
-      }
-    }
-  }
-`;
