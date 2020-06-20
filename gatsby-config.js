@@ -145,10 +145,6 @@ module.exports = {
                     excerpt
                     html
                     timeToRead
-                    fields {
-                      slug
-                      date
-                    }
                     frontmatter {
                       title
                       cover
