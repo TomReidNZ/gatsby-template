@@ -16,7 +16,6 @@ export default class MainLayout extends React.Component {
               href="/fonts/fonts.css"
               rel="stylesheet"
             />
-
         </Helmet>
         {children}
       </div>
