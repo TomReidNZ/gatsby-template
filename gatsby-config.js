@@ -138,7 +138,6 @@ module.exports = {
             {
               allMarkdownRemark(
                 limit: 1000,
-                sort: { order: DESC, fields: [fields___date] },
               ) {
                 edges {
                   node {
