@@ -22,5 +22,5 @@ body {
   min-height: 100vh;
   min-width: 100vw;
   display: flex;
-  padding: 20px;
+  /* padding: 20px; */
 }
